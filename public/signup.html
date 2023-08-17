@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.7/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="bg-gray-100">
+    <div class="flex justify-center items-center h-screen">
+      <div class="bg-white p-8 rounded shadow-md">
+        <h1 class="text-2xl font-semibold mb-4">Sign Up</h1>
+        <form id="signup-form">
+          <div class="mb-4">
+            <label
+              for="signup-username"
+              class="block text-gray-700 font-semibold"
+              >Username</label
+            >
+            <input
+              type="text"
+              id="signup-username"
+              class="w-full px-2 py-1 border rounded"
+              placeholder="Choose a username"
+            />
+          </div>
+          <div class="mb-4">
+            <label
+              for="signup-password"
+              class="block text-gray-700 font-semibold"
+              >Password</label
+            >
+            <input
+              type="password"
+              id="signup-password"
+              class="w-full px-2 py-1 border rounded"
+              placeholder="Choose a password"
+            />
+          </div>
+          <button
+            type="submit"
+            class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600"
+          >
+            Sign Up
+          </button>
+        </form>
+        <p class="mt-4">
+          Already have an account?
+          <a href="login.html" class="text-blue-500 hover:underline">Log in</a>
+        </p>
+      </div>
+    </div>
+    <script src="signup.js"></script>
+  </body>
+</html>
